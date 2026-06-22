@@ -1,0 +1,11 @@
+
+Token lint — hardcoded values not in design/tokens.json
+
+example-output/dirty.css: 3 violation(s)
+  example-output/dirty.css:3:10  HEX #ff0000  →  color: #ff0000;            /* hardcoded red — not a token */
+  example-output/dirty.css:4:15  HEX #1a1a1a  →  background: #1a1a1a;       /* off-palette panel — not a token */
+  example-output/dirty.css:5:12  PX 99px  →  padding: 99px;             /* off-scale spacing — not a token */
+
+example-output/clean.css: clean — 0 hardcoded values outside the token system.
+
+LINT FAILED — 3 hardcoded value(s).

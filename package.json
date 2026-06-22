@@ -1,0 +1,41 @@
+{
+  "name": "@softeneers/design-language",
+  "version": "1.0.0",
+  "description": "A design language as machine-readable tokens (tokens.json) + a generated CSS sheet, a CSS generator and a token linter that flags hardcoded hex/px values.",
+  "type": "module",
+  "bin": {
+    "design-gen-css": "./scripts/gen-css.mjs",
+    "design-lint": "./scripts/lint-tokens.mjs"
+  },
+  "scripts": {
+    "test": "node scripts/self-test.mjs",
+    "self-test": "node scripts/self-test.mjs"
+  },
+  "files": [
+    "scripts",
+    "design"
+  ],
+  "keywords": [
+    "design-tokens",
+    "css",
+    "design-system",
+    "linter",
+    "theme"
+  ],
+  "author": "Softeneers <damian.tudor03@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunder007/design-language.git"
+  },
+  "homepage": "https://github.com/tunder007/design-language#readme",
+  "bugs": {
+    "url": "https://github.com/tunder007/design-language/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

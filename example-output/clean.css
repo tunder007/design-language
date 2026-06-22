@@ -1,0 +1,16 @@
+/* A fixture that uses ONLY tokens (via var(--…)). The linter should report it CLEAN. */
+.finding {
+  color: var(--color-ink);
+  background: var(--component-finding-card-bg);
+  border: var(--space-px) solid var(--color-line);
+  border-left: var(--component-finding-card-rail-width) solid var(--severity-p0-rail);
+  border-radius: var(--component-finding-card-radius);
+  padding: var(--component-finding-card-pad);
+}
+.finding .sev {
+  color: var(--severity-p0-text);
+  background: var(--severity-p0-bg);
+  border: var(--space-px) solid var(--severity-p0-border);
+  border-radius: var(--component-badge-radius);
+  padding: var(--component-badge-pad);
+}

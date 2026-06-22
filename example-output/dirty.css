@@ -1,0 +1,9 @@
+/* A fixture with ad-hoc values the linter should FLAG. */
+.alert {
+  color: #ff0000;            /* hardcoded red — not a token */
+  background: #1a1a1a;       /* off-palette panel — not a token */
+  padding: 99px;             /* off-scale spacing — not a token */
+  border: 1px solid var(--color-line);   /* 1px is a token (--space-px) → OK */
+  border-radius: 12px;       /* 12px is a token (--radius-xl) → OK */
+  margin: 16px;              /* 16px is a token (--space-8) → OK */
+}
