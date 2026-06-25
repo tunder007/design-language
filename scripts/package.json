@@ -1,0 +1,13 @@
+{
+  "name": "design-language-scripts",
+  "version": "2.0.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "design": "./cli.mjs"
+  },
+  "scripts": {
+    "test": "node self-test.mjs",
+    "self-test": "node self-test.mjs"
+  }
+}

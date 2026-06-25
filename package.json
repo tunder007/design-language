@@ -1,11 +1,10 @@
 {
   "name": "@softeneers/design-language",
-  "version": "1.0.0",
-  "description": "A design language as machine-readable tokens (tokens.json) + a generated CSS sheet, a CSS generator and a token linter that flags hardcoded hex/px values.",
+  "version": "2.0.0",
+  "description": "A design language as one interactive design.html (HSL :root = source of truth) + DESIGN.md rules, with five verbs: create, get (extract & centralize a frontend), edit, apply (exact-match codemod), and a live-reload preview.",
   "type": "module",
   "bin": {
-    "design-gen-css": "./scripts/gen-css.mjs",
-    "design-lint": "./scripts/lint-tokens.mjs"
+    "design": "./scripts/cli.mjs"
   },
   "scripts": {
     "test": "node scripts/self-test.mjs",
@@ -13,14 +12,18 @@
   },
   "files": [
     "scripts",
-    "design"
+    "functionalities",
+    "example-output"
   ],
   "keywords": [
     "design-tokens",
-    "css",
     "design-system",
-    "linter",
-    "theme"
+    "css-variables",
+    "hsl",
+    "theme",
+    "codemod",
+    "preview",
+    "ai"
   ],
   "author": "Softeneers <damian.tudor03@gmail.com>",
   "license": "MIT",
